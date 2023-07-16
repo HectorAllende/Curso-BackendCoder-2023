@@ -7,19 +7,21 @@ class CartManager {
         this.path = './src/models/carts.json'
     }
 
-    readProducts = async () => {
+    readCarts = async () => {
         let carts = await fs.readFile(this.path, 'utf8')
         return JSON.parse(carts)
     }
 
-    writeProduts = async (cart) => {
-        await fs.writeFile(this.path, JSON.stringify(cart))
+    writeCarts = async (carts) => {
+        await fs.writeFile(this.path, JSON.stringify(carts))
     }
 
     addCarts = async () =>{
-        let cartsOld = await this.readProducts()
+        let cartsOld = await this.readCarts()
         let id = nanoid()
-        let cartsConcat = [{id: id, products : []}]
+        let cartsConcat = [{id: id, products : []}, ...cartsOld]
+        await this.writeCarts(cartsConcat)
+        return 'Carrito Agregado'
     }
 }
 
