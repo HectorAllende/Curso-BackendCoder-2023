@@ -121,8 +121,8 @@ import fs from "fs"
 
 
       //DELETE
-      deleteProduct=async(id)=>{
-        const {pid}=id
+      deleteProduct=async(pid)=>{
+     
         const allproducts=await this.getProducts({})
         const productswithoutfound=allproducts.filter(elemento=>elemento.id!==parseInt(pid))
        await fs.promises.writeFile(this.path,JSON.stringify(productswithoutfound,null,2))

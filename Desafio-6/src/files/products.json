@@ -93,5 +93,16 @@
     "thumbnail": "https://i.ibb.co/4fY5bvZ/z4.png",
     "code": "casd",
     "stock": "1222"
+  },
+  {
+    "id": 17,
+    "title": "Producto123",
+    "description": "description123",
+    "price": 2500,
+    "thumbnail": "https://i.ibb.co/4fY5bvZ/z4.png",
+    "category": "sport",
+    "status": true,
+    "code": "abc12dsdf8",
+    "stock": 200
   }
 ]
