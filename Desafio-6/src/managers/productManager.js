@@ -39,8 +39,6 @@ import fs from "fs"
      }
   }
 
-
-
     //GENERATE ID 
     generateId=async()=>{
        if(fs.existsSync(this.path)){

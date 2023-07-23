@@ -10,7 +10,7 @@ import {Server} from "socket.io"
 import { Socket } from "engine.io"
 
 const app = express()
-const PORT = 8080;
+const PORT = 4000;
 
 
 app.use(express.json())
@@ -29,7 +29,7 @@ app.use("/", viewRouter)
 
 
 const httpServer = app.listen(PORT, () => {
-    console.log("server is working in port 8080")
+    console.log("server is working in port 4000")
 })
 
 const socketServer = new Server(httpServer)
