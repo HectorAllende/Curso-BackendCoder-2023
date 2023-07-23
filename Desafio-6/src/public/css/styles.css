@@ -33,8 +33,9 @@ body {
   width: 320px;
   height: 450px;
   position: relative;
-  border-radius: 40px;
+  border-radius: 20px;
   overflow: hidden;
+
 }
 
 .container .card:hover .imgBx {
