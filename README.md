@@ -15,7 +15,7 @@ npm install
 El proyecto corre en el puerto 8080
 
 ```
-http://localhost:4000/
+http://localhost:8080/
 ```
 
 ### Formulario para manejo de productos
